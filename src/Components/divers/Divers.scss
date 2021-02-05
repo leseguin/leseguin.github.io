@@ -1,0 +1,43 @@
+@import "../../Utils/colors.scss";
+
+.divers-components {
+    h3 {
+        color: $main-color;
+    }
+    
+    .divers-content {
+        p {
+            font-size: small;
+            margin: 0.2cm;
+        }
+
+        .divers-engagement {
+            .divers-engagement--content{
+                display: flex;
+                align-items: center;
+
+                .rotate-date {
+                    color: $main-color;
+                    transform: rotate(270deg);
+                    font-size: 40px;
+                    margin: 0%;
+                }
+
+                .political {
+                    margin: 0%;
+                }
+            }
+        }
+
+        .divers-loisirs {
+            p {
+                text-align: center;
+                line-height: 1.5;
+                margin-top: 0%;
+
+            }
+        }
+    }
+
+    
+}

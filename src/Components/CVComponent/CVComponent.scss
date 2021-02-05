@@ -1,0 +1,143 @@
+@import "../../Utils/colors.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Anton');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.cv-component{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    position: relative;
+
+    @media print {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    width: 21cm;
+    height: 29.69cm;
+    overflow: hidden;
+
+    h3 {
+        margin: 0.5cm 0cm 0.4cm 0cm;
+        font-size: x-large;
+    }
+
+
+
+
+
+    .date {
+        font-weight: bold;
+    }
+
+    .icon{
+        margin-right: 0.3cm;
+    }
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+
+    
+    
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $sixth-color;
+        color: white;
+    
+        .header-me {
+            font-size: xx-large;
+            font-family: 'Dancing Script', cursive;
+            h1 {
+                margin: 0%;
+            }
+        }
+        .header-contact {
+            font-size: 0.4cm;
+            line-height: 1.5;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex: 1;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        position: relative;
+
+        .wave {
+            top: -0.1cm;
+        }
+
+        
+
+        // .part {
+        //     margin: 0cm 0.5cm
+        // }
+
+    //    .column, .content-col-main {
+    //        padding-top:  !important; 
+    //    }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            width: 7cm;
+            background-color: $secondary-color;
+            padding: 0cm 0.3cm;
+            color: $fifth-color;
+            padding: 1cm 0.8cm 0cm 0.8cm;
+            .icon {
+                color: $third-color;
+            }
+            
+            strong {
+                color: $main-color;
+            }
+        }
+
+        .content-col-main {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0.75cm 0.8cm 0cm 0.8cm;
+            width: 12cm;
+            .icon {
+                color: $fourth-color;
+            }
+            
+        }
+    }
+
+    .footer {
+        background-color: $sixth-color;
+        color: rgba(255, 255, 255, 0.507);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        height: 1cm;
+        width: 100%;
+        p {
+            margin: 0%;
+            font-size: 0.3cm;
+            font-weight: bolder;
+        }
+        .with-love {
+            z-index: 4;
+        }
+
+        .wave {
+            bottom: 0.3cm;
+        }
+
+    }
+}
