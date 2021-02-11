@@ -2,6 +2,9 @@ import React, {FunctionComponent} from 'react'
 
 import './Experience.scss'
 
+import {experiencesData} from './../../data/LeaneSData/ExperiencesData'
+import {ExperienceType} from './../../Type/Types'
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faFlask
@@ -11,26 +14,32 @@ type ExperienceProps = {
 
 }
 
+const experienceDisplayer = ( experience : ExperienceType) => {
+
+    const date = experience.date
+    var displayedDate = date.from !== "" ? <span className="date">{date.from} – {date.to} :</span> : <span className="date">{date.to} :</span>
+
+    return(
+        <div className="experience-row">
+            <div className="experience-row--title part-row-title">
+                <p>{displayedDate}<strong> {experience.name}</strong></p>
+            </div>
+            <div className="experience-row--description part-row-description">
+                {
+                experience.descriptions && experience.descriptions.map((description : any) =>
+                <p><i>{description}</i></p>
+                )}
+            </div>
+        </div>
+    )
+    
+}
+
 const Experience : FunctionComponent<ExperienceProps> = () => <div className="experience-component">
-    <h3><FontAwesomeIcon className="icon" icon={faFlask}/> Expériences</h3>
-        <div className="experience-row">
-            <p><span className="date">Septembre 2020 - Février 2021 :</span> Année de <strong>Découvertes</strong> et <strong>Formations</strong></p>
-            <p><i>Chemin de Saint Jacques de Compostelle</i></p>
-            <p><i>Formations en ligne Coursera & OpenClassRoom</i></p>
-        </div>
-        <div className="experience-row">
-            <p><span className="date">Septembre 2019 - Aout 2020 :</span> <strong>Alternance</strong> – CIO Systèmes Embarqués – Saint-Etienne</p>
-            <p><i>Technicienne de tests et développement logiciels</i></p>
-            <p><i>Rédaction des documents de qualification pour le CNES</i></p>
-        </div>
-        <div className="experience-row">
-            <p><span className="date">Avril-Juin 2019 :</span> <strong>Stage</strong> – Robert Gordon University – Aberdeen – <strong>Ecosse</strong></p>
-            <i>Développement d’un ChatBot pour une application mobile (Dialogflow – Firebase – Javascript – Python)</i>
-        </div>
-        <div className="experience-row">
-            <p><span className="date">2017-2018 :</span> Emploi d’été - INNOVEL – Vénissieux</p>
-            <i>Fabrication/montage de produits électroniques, gestion des entrées et du stock, conditionnement</i>
-        </div>
+    <h3><FontAwesomeIcon className="icon" icon={faFlask}/>Expériences</h3>
+        {
+            experiencesData.experiences && experiencesData.experiences.map((experience: any) => experienceDisplayer(experience) )
+        }
 </div>
 
 export default Experience;

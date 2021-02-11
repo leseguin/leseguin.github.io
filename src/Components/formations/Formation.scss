@@ -3,13 +3,8 @@
 .formations-certifications-component {
 
     .formation-row {
-        font-size: small;
-        .date {
-            color: $main-color;
-        }
-        ul {
-            padding-left: 20px;
-        }
+        display: flex;
+        flex-direction: column;
     }
 
     h3 {

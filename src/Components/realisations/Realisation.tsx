@@ -28,7 +28,7 @@ const Realisation : FunctionComponent<RealisationProps> = () => <div className="
             <ul>
                 <li><strong>Application et logiciel "UFR-Langues" :</strong> effectuer des exercices de latin (Xamarin - C# - XAML)</li>
                 <li><strong>Application IOS "TrumpOrWest" :</strong> Jeu - qui a dit la phrase 
-                    proposée entre Kanye West et Donald Trump. (Swift – 2 API)</li>
+                    proposée entre Kanye West et Donald Trump ? (Swift – 2 API)</li>
                 <li><strong>Application Android "MyRecipeIdea" :</strong> Créer un évènement; idées de recettes; générateur de blagues. (Kotlin - SpoonAcular API)</li>
             </ul>
         </div>

@@ -10,15 +10,25 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faPhoneAlt,
     faEnvelope,
-    faBirthdayCake
+    faBirthdayCake,
+    faDumbbell,
+    faLandmark,
+    faTasks,
+    faGlobe,
+    faCode, 
+    faTools,
+    faGraduationCap,
+    faFlask
 } from '@fortawesome/free-solid-svg-icons'
 
 
-import Divers from '../divers/Divers';
-import Experience from '../experiences/Experience';
-import Formation from '../formations/Formation';
-import Realisation from '../realisations/Realisation';
-import Skills from './../skills/Skills'
+import {GenericContent} from '../GenericContent/GenericContent';
+
+import {
+    hobbiesData, formationsData, experiencesData, 
+    engagementData, skillsData, toolsData,
+    realisationsData, languagesData
+    } from './../../data/LeaneSData/datas'
 
 type CVProps = {
 }
@@ -35,42 +45,41 @@ const CVComponent : FunctionComponent<CVProps> = () => <Container className="cv-
             <FontAwesomeIcon className="icon" icon={faBirthdayCake}/> 21 ans<br/>
             </p>
         </div>
-        
     </header>
     
     <div className="content">
         <div className="wave">
-            <Wave type="top" color={mainColor}/>
+            <Wave place="top" color={mainColor}/>
         </div>
 
         <div className="column">
-            <div className="content-col-skills part">
-                <Skills/>  
-            </div>
-            <div className="realisations part">
-                <Realisation/>
-            </div> 
+            {/* <Skills/>  */}
+            <GenericContent partClass="skills" partIcon={faCode} partData={skillsData.partData}/>
+            <GenericContent partClass="tools" partIcon={faTools} partData={toolsData.partData}/>
+            {/* <Realisation/> */}
+            <GenericContent partClass="realisations" partIcon={faTasks} partData={realisationsData.partData}/>
+            <GenericContent partClass="languages" partIcon={faGlobe} partData={languagesData.partData}/>
+
+
+            
         </div>
         
         <div className="content-col-main">
-            <div className="formations-certifications part">
-                <Formation/>
-            </div>
-
-            <div className="experiences part">
-                <Experience/>
-            </div>
-
-        <div className="divers part">
-            <Divers/>
+            {/* <Formation/> */}
+            <GenericContent partClass="formations" partIcon={faGraduationCap} partData={formationsData.partData}/>
+            {/* <Experience/> */}
+            <GenericContent partClass="experiences" partIcon={faFlask} partData={experiencesData.partData}/>
+            {/* <Divers/> */}
+            <GenericContent partClass="engagements" partIcon={faLandmark} partData={engagementData.partData}/>
+            {/* <Hobbies/> */}
+            <GenericContent partClass="hobbies" partIcon={faDumbbell} partData={hobbiesData.partData}/>
         </div>
-    </div>
     
     </div>
     
     <div className="footer">
         <div className="wave">
-            <Wave type="bottom" color={mainColor}/>
+            <Wave place="bottom" color={mainColor}/>
         </div>
         <div className="with-love">
             <p>Designed with React & Sass</p>

@@ -18,17 +18,39 @@
     height: 29.69cm;
     overflow: hidden;
 
-    h3 {
-        margin: 0.5cm 0cm 0.4cm 0cm;
-        font-size: x-large;
-    }
 
+    .generic-part {
+        font-size: 0.35cm;
 
+        .generic-part--title {
+            color: $main-color;
+            margin: 0.3cm 0 0.1cm 0.2cm;
+            font-size: 0.65cm;
 
+            h3 {
+                margin: 0;
+                font-size: 0.65cm;
+            }
+        }
 
-
-    .date {
-        font-weight: bold;
+        .contents--content--header {
+            display: flex;
+            flex-flow: row wrap;
+            .contents--content--title {
+                margin-left: 0.3cm;
+            }
+        }
+        .desc {
+            display: flex;
+            margin-left: 0.45cm;
+            font-size: 0.33cm;
+            .desc--by {
+                margin: 0 0 0 0.1cm;
+                
+                font-style: oblique;
+                align-self : center
+            }
+        }
     }
 
     .icon{
@@ -41,9 +63,6 @@
         z-index: 2;
     }
 
-    
-    
-
     header {
         display: flex;
         flex-direction: row;
@@ -53,7 +72,7 @@
         color: white;
     
         .header-me {
-            font-size: xx-large;
+            font-size: 0.8cm;
             font-family: 'Dancing Script', cursive;
             h1 {
                 margin: 0%;
@@ -66,34 +85,200 @@
     }
 
     .content{
+        
         display: flex;
         flex: 1;
         flex-direction: row-reverse;
         justify-content: space-around;
         position: relative;
 
+        .icon {
+            height: 0.7cm;
+        }
+
+        .column {
+            .generic-part--title {
+                text-align: center;
+            }
+        }
+
         .wave {
             top: -0.1cm;
         }
 
+        .date {
+            font-weight: bold;
+            color: $main-color;
+        }
+        p {
+            margin: 0.1cm 0 0.1cm 0 ;
+        }
+
+        .skills, .tools{
+            .desc {
+                font-size: 0.45cm!important;
+                text-align: center;
+            }
+            
+        }
+
+        .languages {
+            .contents--content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .contents--content--header {
+                    font-size: 0.45cm;
+                }
+                .desc {
+                    margin: 0.1cm 0 0.1cm 0;
+                }
+            }
+        }
+
+        .realisations {
+            .contents--content--header {
+                display: flex;
+                justify-content: center;
+            }
+
+            .contents--content {
+                margin: 0.1cm 0 0.3cm 0;
+            }
+
+            .desc {
+                display: flex;
+                flex-direction: column;
+                .desc--description {
+                    p {
+                        margin: 0 0 0 0.2cm;
+                    }
+                }
+                
+            }
+
+            
+        }
+
+        .engagements {
+            display: flex;
+            flex-flow: column wrap;
+
+            .contents--content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+
+                .contents--content--header {
+                    width: 1.2cm;
+                    .contents--content--title {
+                        color: $main-color;
+                        transform: rotate(270deg);
+                        font-size: 40px;
+                        margin: 0%;
+                        height: 2cm;
+    
+                        align-self: flex-start;
+                    }
+                }
+                .contents--content--desc {
+                    // width :max-content
+                    .desc {
+                        display: flex;
+                        flex-direction: column;
+
+                        .desc--description {
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .formations {
+            display: flex;
+            flex-flow: column wrap;
+
+            .generic-part--contents {
+                .contents--content {
+                    margin-top: 0.1cm;
+                    
+                }
+            }
+        }
+
+        .experiences {
+            display: flex;
+            flex-flow: column wrap;
+
+            .generic-part--contents {
+                .contents--content {
+                    margin-top: 0.1cm;
+                    
+                }
+            }
+        }
+
+        .hobbies {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
         
+            .contents--content--desc {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                
+                .desc {
+                    display: flex;
+                    flex-flow: row wrap;
+                    p {
+                        margin: 0.1cm;
+                    }
 
-        // .part {
-        //     margin: 0cm 0.5cm
-        // }
+                    .desc--title {
+                        font-weight: bold;
+                        font-size: 0.32cm;
+                    } 
+                    .desc--description {
+                        margin : 0;
+                        font-size: 0.3cm;
+                        font-style: oblique;
+                    }
+                }
+                
+            }
+        }
 
-    //    .column, .content-col-main {
-    //        padding-top:  !important; 
-    //    }
+        .part-row-title{
+            font-size: 0.35cm;
+            .date {
+                font-weight: bold;
+                color: $main-color;
+            }
+            p {
+                margin: 0.1cm 0 0.1cm 0 ;
+            }
+        }
+
+        .part-row-description{
+            font-size: 0.3cm;
+            font-style: oblique;
+            p {
+                margin: 0.1cm 0 0.1cm 0.3cm ;
+            }
+        }
         
         .column {
             display: flex;
             flex-direction: column;
             width: 7cm;
             background-color: $secondary-color;
-            padding: 0cm 0.3cm;
+            padding: 1.7cm 0.8cm 0cm 0.8cm;
             color: $fifth-color;
-            padding: 1cm 0.8cm 0cm 0.8cm;
             .icon {
                 color: $third-color;
             }
@@ -107,12 +292,13 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            padding: 0.75cm 0.8cm 0cm 0.8cm;
+            padding: 1cm 0.8cm 0cm 0.8cm;
             width: 12cm;
             .icon {
                 color: $fourth-color;
             }
             
+        
         }
     }
 

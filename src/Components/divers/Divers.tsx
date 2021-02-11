@@ -1,22 +1,23 @@
 import React, {FunctionComponent} from 'react'
 
+import {DiversType} from './../../Type/Types'
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
-    faLandmark,
-    faDumbbell
+    faLandmark
 } from '@fortawesome/free-solid-svg-icons'
 
 import './Divers.scss'
 
-type DiversProps = {
 
-}
+type diversProps ={
 
-const Divers : FunctionComponent<DiversProps> = () => <div className="divers-components">
-    {/* <h2>Divers</h2> */}
+} 
+
+const Divers : FunctionComponent<diversProps> = () => <div className="divers-components">
     <div className="divers-content">
         <div className="divers-engagement">
-            <h3><FontAwesomeIcon className="icon" icon={faLandmark}/> Engagements</h3>
+            <h3><FontAwesomeIcon className="icon" icon={faLandmark}/>Engagements</h3>
             <div className="divers-engagement--content">
             <p className="date rotate-date">2017</p>
             <p className="political">
@@ -28,12 +29,12 @@ const Divers : FunctionComponent<DiversProps> = () => <div className="divers-com
             </div>
             
         </div>
-        <div className="divers-loisirs">
-            <h3><FontAwesomeIcon className="icon" icon={faDumbbell}/> Loisirs</h3>
-            <p>Crossfit – Histoire – Voyage – Dessin <br/> Rock (Janis Joplin, Simon and Garfunkel, Naïve New Beaters …)</p>
-        </div>
     </div>
     
 </div>
+
+
+
+
 
 export default Divers;
