@@ -53,10 +53,8 @@ const CVComponent : FunctionComponent<CVProps> = () => <Container className="cv-
         </div>
 
         <div className="column">
-            {/* <Skills/>  */}
             <GenericContent partClass="skills" partIcon={faCode} partData={skillsData.partData}/>
             <GenericContent partClass="tools" partIcon={faTools} partData={toolsData.partData}/>
-            {/* <Realisation/> */}
             <GenericContent partClass="realisations" partIcon={faTasks} partData={realisationsData.partData}/>
             <GenericContent partClass="languages" partIcon={faGlobe} partData={languagesData.partData}/>
 
@@ -65,13 +63,9 @@ const CVComponent : FunctionComponent<CVProps> = () => <Container className="cv-
         </div>
         
         <div className="content-col-main">
-            {/* <Formation/> */}
             <GenericContent partClass="formations" partIcon={faGraduationCap} partData={formationsData.partData}/>
-            {/* <Experience/> */}
             <GenericContent partClass="experiences" partIcon={faFlask} partData={experiencesData.partData}/>
-            {/* <Divers/> */}
             <GenericContent partClass="engagements" partIcon={faLandmark} partData={engagementData.partData}/>
-            {/* <Hobbies/> */}
             <GenericContent partClass="hobbies" partIcon={faDumbbell} partData={hobbiesData.partData}/>
         </div>
     
