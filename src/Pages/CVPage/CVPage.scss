@@ -1,0 +1,66 @@
+@import "./../../Utils/colors.scss";
+
+.cv-page{
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center;
+    background-color: #d1d1d1;
+
+    @media print {
+        .download-resume {
+            display: none;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .cv-component {
+            display: none;
+            height: 100%;
+        }
+
+        .download-resume {
+            margin-top: 0cm !important;
+            a {
+                display: flex;
+                flex-direction: column!important;
+                align-items: center;
+                p, .icon {
+                    color: $main-color!important;
+                }
+            }
+        }
+
+        @media print {
+            .cv-component {
+                display: block;
+            }
+        }
+    }
+
+    @media screen {
+        .cv-component {
+            margin: 1cm ; 
+        }
+    }
+
+    .page-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .icon, a{
+            color: white;  
+        }
+        .download-resume {
+            margin-top: 0.5cm;
+            a {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none; 
+                p{
+                    margin: 0 0.1cm;
+                }
+            }
+        }
+    }
+}

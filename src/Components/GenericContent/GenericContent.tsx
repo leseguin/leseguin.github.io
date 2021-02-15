@@ -2,8 +2,6 @@ import {IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, {FunctionComponent} from 'react'
 
-
-
 type genericDate = {
     from : string,
     to : string
@@ -31,11 +29,6 @@ export type genericPartProps = {
     partClass? : string, 
     partIcon? : IconProp
 }
-
-
-
-
-
 
 const dateDisplayer = (date? : genericDate) => {
     if(date) {
@@ -86,8 +79,6 @@ const singleContentDisplayer = (content : genericContent) => {
     )
 }
 
-//  
-
 const contentsDisplayer = (contents : Array<genericContent>) => {    
     return (
     <div className="generic-part--contents">
@@ -104,10 +95,6 @@ const contentsDisplayer = (contents : Array<genericContent>) => {
     )
 }
 
-
-
-
-
 export const GenericContent : FunctionComponent<genericPartProps> = (props) => {
     const icon = props.partIcon ? <FontAwesomeIcon className="icon" icon={props.partIcon}/> : ""
     return(
@@ -117,6 +104,3 @@ export const GenericContent : FunctionComponent<genericPartProps> = (props) => {
     </div>
     )
 }
-    
-
-

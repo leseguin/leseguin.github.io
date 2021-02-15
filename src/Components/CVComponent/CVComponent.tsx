@@ -1,7 +1,5 @@
 import React, { FunctionComponent } from 'react'; // we need this to make JSX compile
 
-import { Container} from 'react-bootstrap';
-
 import './CVComponent.scss'
 import Wave from './../Wave/Wave'
 
@@ -34,7 +32,7 @@ type CVProps = {
 }
 const mainColor = "#105a63";
 
-const CVComponent : FunctionComponent<CVProps> = () => <Container className="cv-component"> 
+const CVComponent : FunctionComponent<CVProps> = () => <div className="cv-component"> 
     <header>
         <div className="header-me">
             <h1>Léane Seguin</h1>
@@ -80,6 +78,6 @@ const CVComponent : FunctionComponent<CVProps> = () => <Container className="cv-
         </div>
     </div>
     
-</Container>
+</div>
 
 export default CVComponent

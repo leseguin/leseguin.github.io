@@ -3,21 +3,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Anton');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+$percent-mobile : 0.90;
+
+@media (max-width: 640px) {
+    .cv-component{
+        .generic-part {
+            font-size: 0.35cm * $percent-mobile !important;
+            .desc{
+                font-size: 0.33cm * $percent-mobile !important;
+            }   
+        }
+        
+        .content {
+            .skills, .tools{
+                .desc {
+                    font-size: 0.45cm * $percent-mobile!important;
+                }
+            }
+        }     
+    }
+}
+
 .cv-component{
     display: flex;
     flex-direction: column;
     font-family: 'Anton', sans-serif;
     position: relative;
+    background-color: white;
+
+    $width : 21cm;
+    $height : 29.63cm;
+
+    width: $width;
+    height: $height;
+    overflow: hidden;
 
     @media print {
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
+        // width: $width;
+        // height: $height;
+
     }
-
-    width: 21cm;
-    height: 29.69cm;
-    overflow: hidden;
-
 
     .generic-part {
         font-size: 0.35cm;
@@ -85,7 +112,6 @@
     }
 
     .content{
-        
         display: flex;
         flex: 1;
         flex-direction: row-reverse;
@@ -114,12 +140,30 @@
             margin: 0.1cm 0 0.1cm 0 ;
         }
 
+        .part-row-title{
+            font-size: 0.35cm;
+            .date {
+                font-weight: bold;
+                color: $main-color;
+            }
+            p {
+                margin: 0.1cm 0 0.1cm 0 ;
+            }
+        }
+
+        .part-row-description{
+            font-size: 0.3cm;
+            font-style: oblique;
+            p {
+                margin: 0.1cm 0 0.1cm 0.3cm ;
+            }
+        }
+
         .skills, .tools{
             .desc {
-                font-size: 0.45cm!important;
+                font-size: 0.45cm;
                 text-align: center;
             }
-            
         }
 
         .languages {
@@ -175,7 +219,7 @@
                     .contents--content--title {
                         color: $main-color;
                         transform: rotate(270deg);
-                        font-size: 40px;
+                        font-size: 1cm;
                         margin: 0%;
                         height: 2cm;
     
@@ -252,25 +296,6 @@
                 
             }
         }
-
-        .part-row-title{
-            font-size: 0.35cm;
-            .date {
-                font-weight: bold;
-                color: $main-color;
-            }
-            p {
-                margin: 0.1cm 0 0.1cm 0 ;
-            }
-        }
-
-        .part-row-description{
-            font-size: 0.3cm;
-            font-style: oblique;
-            p {
-                margin: 0.1cm 0 0.1cm 0.3cm ;
-            }
-        }
         
         .column {
             display: flex;
@@ -279,6 +304,7 @@
             background-color: $secondary-color;
             padding: 1.7cm 0.8cm 0cm 0.8cm;
             color: $fifth-color;
+            height: $height;
             .icon {
                 color: $third-color;
             }
@@ -292,7 +318,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            padding: 1cm 0.8cm 0cm 0.8cm;
+            padding: 1cm 0.5cm 0cm 0.5cm;
             width: 12cm;
             .icon {
                 color: $fourth-color;
@@ -313,7 +339,7 @@
         height: 1cm;
         width: 100%;
         p {
-            margin: 0%;
+            margin: 0;
             font-size: 0.3cm;
             font-weight: bolder;
         }
@@ -322,7 +348,7 @@
         }
 
         .wave {
-            bottom: 0.3cm;
+            bottom: 0.25cm;
         }
 
     }
