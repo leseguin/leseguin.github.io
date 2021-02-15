@@ -21,13 +21,13 @@ function App() {
         <nav className="app-router--nav">
           <ul>
             <li>
-              <Link to="/web-cv/">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/web-cv/resume">CV</Link>
+              <Link to="/resume">CV</Link>
             </li>
             <li>
-              <Link to="/web-cv/projects">Projets</Link>
+              <Link to="/projects">Projets</Link>
             </li>
           </ul>
         </nav>

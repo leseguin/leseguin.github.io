@@ -2,6 +2,7 @@
   "name": "web-cv",
   "version": "0.1.0",
   "private": true,
+  "start_url": ".",
   "homepage": "https://leseguin.github.io/web-cv/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
