@@ -9,6 +9,8 @@ import {
 } from 'react-router-dom';
 import CVPage from "./Pages/CVPage/CVPage";
 import Home from "./Pages/Home/Home";
+import Projects from "./Pages/Projects/Projects";
+
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
               <Link to="/resume">CV</Link>
             </li>
             <li>
-              <Link to="/users">Projets</Link>
+              <Link to="/projects">Projets</Link>
             </li>
           </ul>
         </nav>
@@ -36,8 +38,11 @@ function App() {
           <Route path="/resume">
             <CVPage />
           </Route>
+          <Route path="/projects">
+            <Projects/>
+          </Route>
           <Route path="/">
-            <Home />
+            <Home/>
           </Route>
         </Switch>
       </div>
