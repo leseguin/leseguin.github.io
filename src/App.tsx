@@ -5,7 +5,8 @@ import {
   Switch,
   Route,
   Link,
-  BrowserRouter
+  BrowserRouter,
+  HashRouter
 } from 'react-router-dom';
 import CVPage from "./Pages/CVPage/CVPage";
 import Home from "./Pages/Home/Home";
@@ -16,7 +17,8 @@ function App() {
   return (
     <div className="App">
       <div className="app-router">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      {/* basename="/" */}
+      <HashRouter>
       <div className="app-router--div" >
         <nav className="app-router--nav">
           <ul>
@@ -44,7 +46,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
       </div>
     </div>
   );
