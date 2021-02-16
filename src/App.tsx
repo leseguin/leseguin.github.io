@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className="app-router">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <div className="app-router--div" >
         <nav className="app-router--nav">
           <ul>
