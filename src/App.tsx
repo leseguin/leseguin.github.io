@@ -2,10 +2,10 @@ import React from "react";
 import './App.scss';
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  BrowserRouter
 } from 'react-router-dom';
 import CVPage from "./Pages/CVPage/CVPage";
 import Home from "./Pages/Home/Home";
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className="app-router">
-      <Router basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="app-router--div" >
         <nav className="app-router--nav">
           <ul>
@@ -31,14 +31,12 @@ function App() {
             </li>
           </ul>
         </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+        
         <Switch>
           <Route path="/resume">
             <CVPage />
           </Route>
-          <Route path="/projects">
+          <Route path= "/projects">
             <Projects/>
           </Route>
           <Route path="/">
@@ -46,7 +44,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
       </div>
     </div>
   );
