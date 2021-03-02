@@ -1,0 +1,15 @@
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .project-description {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .gif {
+            height: 30em
+        }
+    }
+}

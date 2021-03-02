@@ -87,7 +87,7 @@ export const realisationsData : genericPartProps = {
                 description : [
                     {
                         title : 'ChatBot "Coach Sportif"',
-                        description : ["(Javascript – Python - Firabase - Dialogflow)"]
+                        description : ["(Javascript – Python - Firebase - Dialogflow)"]
                     }
                 ]
             }
@@ -141,10 +141,10 @@ export const engagementData : genericPartProps = {
                         title : "Étudiante titulaire au conseil de gestion de l’IUT",
                         description : ["(mandat de 2 ans)"]
                     },
-                    {
-                        title : "Membre de la Commission de la Vie Etudiante de l’IUT",
-                        description : ["(mandat de 2 ans)"]
-                    },
+                    // {
+                    //     title : "Membre de la Commission de la Vie Etudiante de l’IUT",
+                    //     description : ["(mandat de 2 ans)"]
+                    // },
                     {
                         title : "Responsable Communication au Bureau Des Etudiants",
                         description : ["(mandat de 1 an)"]
@@ -232,7 +232,7 @@ export const formationsData : genericPartProps = {
         contentPartTitle : "Formations et Certifications",
         contents : [
             {
-            title : "Coursera - Université en ligne",
+            title : "Coursera - Université en ligne - Spécialisations et projets",
             date : {
                 from : "2020",
                 to : "2021"
@@ -248,6 +248,10 @@ export const formationsData : genericPartProps = {
             {
                 title : "Swift 5 iOS Application Developer",
                 by : "LearnQuest"
+            }, 
+            {
+                title : "Kotlin for Java Developers",
+                by: "JetBrains",
             }
         ]},
         {

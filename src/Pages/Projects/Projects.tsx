@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import ProjectComponent from '../../Components/ProjectComponent/ProjectComponent'
 
 import './Projects.scss'
 
-export default function Projects() {
-    return (
-      <div className="project-page">
-            <h3>Léane Seguin</h3>
-            <p>projects page coming Soon ...</p>
-      </div>
-    );
+type projectsProps = {} 
+
+const Projects : FunctionComponent<projectsProps> = () => {
+  return (
+    <div className="project-page">
+          <h3>Léane Seguin</h3>
+          <div className="projects-page--content">
+              <ProjectComponent/>
+          </div>
+    </div>
+  );
 }
+
+export default Projects;
