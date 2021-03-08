@@ -1,6 +1,5 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { link } from "fs";
 import React, { FunctionComponent } from "react";
 
 import './BubbleLink.scss'

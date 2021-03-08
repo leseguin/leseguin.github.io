@@ -10,7 +10,6 @@ import {
 import CVPage from "./Pages/CVPage/CVPage";
 import Home from "./Pages/Home/Home";
 import Projects from "./Pages/Projects/Projects";
-import Wave from "./Components/Wave/Wave";
 
 
 function App() {
