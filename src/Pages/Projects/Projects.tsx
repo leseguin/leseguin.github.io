@@ -10,7 +10,7 @@ const Projects : FunctionComponent<projectsProps> = () => {
     <div className="project-page">
           <h3>Mes projets</h3>
           <div className="projects-page--content">
-              <p>Coming soon... </p>
+              <p>La page arrive prochainement ...</p>
           </div>
     </div>
   );

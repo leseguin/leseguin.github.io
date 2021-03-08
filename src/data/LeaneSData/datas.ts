@@ -78,7 +78,7 @@ export const realisationsData : genericPartProps = {
                     },
                     {
                         title : 'Application Android "MyRecipeIdea"',
-                        description : ["Créer un évènement; idées de recettes; générateur de blagues. (Kotlin - SpoonAcular API)"]
+                        description : ["Créer un évènement; idées de recettes; générateur de blagues. (Kotlin - SpoonAcular API - Retrofit)"]
                     }
                 ]
             },

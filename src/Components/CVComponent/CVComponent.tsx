@@ -46,9 +46,7 @@ const CVComponent : FunctionComponent<CVProps> = () => <div className="cv-compon
     </header>
     
     <div className="content">
-        <div className="wave">
-            <Wave place="top" color={mainColor}/>
-        </div>
+        <Wave place="top" color={mainColor}/>
 
         <div className="column">
             <GenericContent partClass="skills" partIcon={faCode} partData={skillsData.partData}/>
@@ -70,9 +68,7 @@ const CVComponent : FunctionComponent<CVProps> = () => <div className="cv-compon
     </div>
     
     <div className="footer">
-        <div className="wave">
-            <Wave place="bottom" color={mainColor}/>
-        </div>
+        <Wave place="bottom" color={mainColor}/>
         <div className="with-love">
             <p>Designed with React & Sass</p>
         </div>
