@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Anton');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&family=Montserrat:wght@200&display=swap');
+
+@import "../../Utils/colors.scss";
+
+@media (max-width: 640px) {
+    .home-page {
+        margin: 0.3cm !important;
+    }
+}
+
+.home-page {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.3cm;
+    font-size: 0.45cm;
+    text-align:justify;
+    h3 {
+        font-size: 1.9cm;
+        color: $main-color;
+        font-family: 'Kavivanar', cursive;
+        margin: 0.2cm 0.4cm;
+    }
+
+    .home-page--purpose {
+        font-weight: bolder;
+        font-size: 0.6cm;
+    }
+
+    .findme--bubbles {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 3cm;
+
+        .bubble-link {
+            margin: 0.5cm;
+        }
+    }
+}

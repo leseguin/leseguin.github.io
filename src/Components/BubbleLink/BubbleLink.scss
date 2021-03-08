@@ -1,0 +1,50 @@
+@import "../../Utils/colors.scss";
+
+$squareSize : 3cm;
+$iconSize : 1.5cm;
+
+$mobileSquareSize : 1.5cm;
+$mobileIconSize : 0.75cm;
+
+@media (max-width: 640px) {
+   .bubble-link {
+        a{
+            height: $mobileSquareSize !important;
+            width: $mobileSquareSize !important;
+            border-radius: 1cm !important;
+            
+
+            .icon {
+                font-size: $mobileIconSize !important;
+            }
+
+            p {
+                display: none ;
+            }
+        }
+    } 
+} 
+
+.bubble-link {
+    a{
+        height: $squareSize;
+        width: $squareSize;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $main-color;
+        border-radius: 2cm;
+        text-decoration: none;
+    
+        .icon {
+            font-size: $iconSize;
+            color: white ;
+        }
+        p{
+            margin: 0;
+            color: white;
+        }
+    }
+    
+}

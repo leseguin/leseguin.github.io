@@ -24,6 +24,15 @@ html, body, #root{
     .cv-page {
       height: 100%;
     }
+    .made-with{
+      display: none !important;
+    }
+
+  }
+
+  .wave {
+    position: absolute;
+    width: 100%;
   }
   
   @media print {
@@ -38,7 +47,16 @@ html, body, #root{
       display: flex;
       background-color: $main-color;
       font-family: 'Merriweather', serif;
+      justify-content: space-between;
      
+      .made-with {
+        color: $fifth-color;
+        font-size: 0.25cm;
+        display: flex;
+        align-items: center;
+        margin: 0.3cm;
+      }
+
       ul  {
         display: flex;
         flex-direction: row;

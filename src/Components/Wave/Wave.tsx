@@ -17,9 +17,11 @@ import { FunctionComponent } from "react"
     var path = props.place === "bottom" ? bottom : top
 
     return (
+      <div className="wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
            {path}
         </svg>
+        </div>
     )
 
  }
