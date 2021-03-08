@@ -8,7 +8,7 @@ type projectsProps = {}
 const Projects : FunctionComponent<projectsProps> = () => {
   return (
     <div className="project-page">
-          <h3>Léane Seguin</h3>
+          <h3>Mes projets</h3>
           <div className="projects-page--content">
               <p>La page arrive prochainement ...</p>
           </div>
