@@ -1,6 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Anton');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&family=Montserrat:wght@200&display=swap');
+
+@import "../../Utils/colors.scss";
+
+$fontSizeH3 : 1.2cm;
+
 .project-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-top: 1cm;
+
+    .projects-page--content {
+        z-index: 19;
+        margin-left: 2cm;
+        h3 {
+            font-size: $fontSizeH3;
+            color: $main-color;
+            font-family: 'Kavivanar', cursive;
+            margin: 0.2cm 0.4cm;
+        }
+
+        .content--part {
+            margin-left: 1cm;
+        }
+
+        .content--part {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 1cm 3cm;
+            h4 {
+                font-size: 0.6cm;
+                color: $main-color;
+                font-family: 'Kavivanar', cursive;
+                margin-left: 1cm;
+            }
+
+            .content--part--desc {
+                display: none;
+            }
+        }
+
+        .kotlin {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .projects-page--content {
+            margin: 0.3cm;
+            h3 {
+                font-size: 0.9cm;
+                font-family: 'Kavivanar', cursive;
+                margin: 0.2cm;
+                text-align: center;
+            }
+
+            .content--part {
+                display: flex;
+                flex-direction: row;
+                margin: 0.5cm 1cm;
+                align-items: center;
+                justify-content: center;
+                h4 {
+                    font-size: 0.6cm;
+                    color: $main-color;
+                    margin: 0.2cm;
+                    text-align: end;
+                }
+                .bubble-link {
+                    margin: 0.2cm;
+                }
+            }
+
+            .right {
+                flex-direction: row-reverse;
+                h4 {
+                    text-align: start;
+                }
+            }
+        }
+    } 
 }

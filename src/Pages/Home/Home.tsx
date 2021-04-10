@@ -4,7 +4,6 @@ import './Home.scss'
 import {
   faLinkedin,
   faGithub
-  
 } from '@fortawesome/free-brands-svg-icons'
 
 import {
