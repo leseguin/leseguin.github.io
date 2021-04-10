@@ -40,7 +40,7 @@ const CVComponent : FunctionComponent<CVProps> = () => <div className="cv-compon
         <div className="header-contact">
             <p><FontAwesomeIcon className="icon" icon={faPhoneAlt}/> 07.77.76.53.52<br/>
             <FontAwesomeIcon  className="icon" icon={faEnvelope}/> leane.seguincomptes@gmail.com<br/>
-            <FontAwesomeIcon className="icon" icon={faBirthdayCake}/> 21 ans<br/>
+            <FontAwesomeIcon className="icon" icon={faBirthdayCake}/> 22 ans<br/>
             </p>
         </div>
     </header>
@@ -70,7 +70,7 @@ const CVComponent : FunctionComponent<CVProps> = () => <div className="cv-compon
     <div className="footer">
         <Wave place="bottom" color={mainColor}/>
         <div className="with-love">
-            <p>Designed with React & Sass</p>
+            <p>Designed with React &amp; Sass</p>
         </div>
     </div>
     

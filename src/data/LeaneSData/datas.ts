@@ -121,7 +121,7 @@ export const skillsData : genericPartProps =  {
                 description : [
                     {
                         description : [
-                            "Swift – Kotlin – Java – JavaScript - TypeScript – HTML – CSS – SASS – React – React Native – Ionic - SQL – C - Python – Angular"
+                            "Swift – Kotlin – Java – JavaScript - TypeScript – HTML – CSS – SASS – React – React Native – Ionic – SQL – C – Python – Angular"
                         ]
                     }
                 ]
