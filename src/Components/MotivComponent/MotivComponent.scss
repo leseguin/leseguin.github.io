@@ -1,0 +1,127 @@
+@import "../../Utils/colors.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+$percent-mobile : 1;
+
+
+.motiv-component{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+
+    $width : 21cm;
+    $height : 29.63cm;
+
+    width: $width;
+    height: $height;
+    overflow: hidden;
+    
+
+    @media print {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    .icon{
+        margin-right: 0.3cm;
+    }
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $sixth-color;
+        color: white;
+    
+        .header-me {
+            font-size: 0.8cm;
+            font-family: 'Dancing Script', cursive;
+            h1 {
+                margin: 0%;
+            }
+        }
+        .header-contact {
+            font-size: 0.4cm;
+            line-height: 1.5;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+
+        .icon {
+            height: 0.7cm;
+        }
+
+        .wave {
+            top: -0.1cm;
+        }
+
+        p { 
+            margin: 0.3cm 0  ;
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.05; 
+            font-size: 11pt;
+        }
+
+        .content--part {
+            margin: 0cm 1.9cm;
+            text-align: justify;
+
+            .MrsAndM, .content--signature {
+                font-weight: bolder;
+                color: $main-color;
+                font-size: 0.6cm;
+            }
+        }
+
+        .content--signature {
+            text-align: end;
+            margin-right: 1cm;
+        }
+
+        @media print {
+            .content--part {
+                margin: 1.1cm 1.9cm 0 1.9cm;
+            }
+        }
+    }
+
+    .footer {
+        background-color: $sixth-color;
+        color: rgba(255, 255, 255, 0.507);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        height: 1cm;
+        width: 100%;
+        p {
+            margin: 0;
+            font-size: 0.3cm;
+            font-weight: bolder;
+        }
+        .with-love {
+            z-index: 4;
+        }
+
+        .wave {
+            bottom: 0.5cm;
+        }
+
+    }
+}
