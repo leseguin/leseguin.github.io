@@ -38,7 +38,7 @@ const Projects : FunctionComponent<projectsProps> = () => {
             <h4>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
         </div>
         <div className="content--part certifs-part left">
-            <BubbleLink link="" bubbleTitle="Kotlin" bubbleIcon={faAndroid}/>
+            <BubbleLink link="https://coursera.org/share/63b0233e1404cb73aa0e37607116c993" bubbleTitle="Kotlin" bubbleIcon={faAndroid}/>
             <h4>Kotlin for Java Developers par JetBrains</h4>
         </div>
         <div className="content--part certifs-part right">

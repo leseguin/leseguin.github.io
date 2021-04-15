@@ -41,6 +41,7 @@ const CVComponent : FunctionComponent<CVProps> = () => <div className="cv-compon
             <p><FontAwesomeIcon className="icon" icon={faPhoneAlt}/> 07.77.76.53.52<br/>
             <FontAwesomeIcon  className="icon" icon={faEnvelope}/> leane.seguincomptes@gmail.com<br/>
             <FontAwesomeIcon className="icon" icon={faBirthdayCake}/> 22 ans<br/>
+            <FontAwesomeIcon className="icon" icon={faGlobe}/> http://leseguin.github.io<br/>
             </p>
         </div>
     </header>

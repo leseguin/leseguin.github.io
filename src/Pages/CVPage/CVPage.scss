@@ -14,7 +14,7 @@
     }
 
     @media (max-width: 640px) {
-        .cv-component {
+        .cv-component, .motiv-component {
             display: none;
             height: 100%;
         }
@@ -32,14 +32,14 @@
         }
 
         @media print {
-            .cv-component {
+            .cv-component, .motiv-component {
                 display: block;
             }
         }
     }
 
     @media screen {
-        .cv-component {
+        .cv-component, .motiv-component {
             margin: 1cm ; 
         }
     }
