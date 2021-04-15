@@ -22,6 +22,12 @@ $fontSizeH3 : 1.2cm;
             margin: 0.2cm 0.4cm;
         }
 
+        .helper {
+            color: $main-color;
+            font-size: 0.3cm;
+            margin: 0;
+        }
+
         .content--part {
             margin-left: 1cm;
         }
@@ -36,6 +42,7 @@ $fontSizeH3 : 1.2cm;
                 color: $main-color;
                 font-family: 'Kavivanar', cursive;
                 margin-left: 1cm;
+                
             }
 
             .content--part--desc {
@@ -52,9 +59,13 @@ $fontSizeH3 : 1.2cm;
         .projects-page--content {
             margin: 0.3cm;
             h3 {
-                font-size: 0.9cm;
+                font-size: 1.15cm;
                 font-family: 'Kavivanar', cursive;
                 margin: 0.2cm;
+                text-align: center;
+            }
+
+            .helper {
                 text-align: center;
             }
 
@@ -65,10 +76,10 @@ $fontSizeH3 : 1.2cm;
                 align-items: center;
                 justify-content: center;
                 h4 {
-                    font-size: 0.6cm;
+                    font-size: 0.55cm;
                     color: $main-color;
                     margin: 0.2cm;
-                    text-align: end;
+                    text-align: center;
                 }
                 .bubble-link {
                     margin: 0.2cm;
@@ -78,7 +89,7 @@ $fontSizeH3 : 1.2cm;
             .right {
                 flex-direction: row-reverse;
                 h4 {
-                    text-align: start;
+                    text-align: center;
                 }
             }
         }

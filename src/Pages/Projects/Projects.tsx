@@ -4,13 +4,15 @@ import BubbleLink from '../../Components/BubbleLink/BubbleLink';
 import './Projects.scss'
 
 import {
-  faTasks
+  faTasks,
+  faInfoCircle
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faApple,
   faBootstrap,
   faAndroid
 } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type projectsProps = {} 
 
@@ -20,6 +22,7 @@ const Projects : FunctionComponent<projectsProps> = () => {
 
       <div className="projects-page--content certifs">
         <h3>Mes certifications</h3>
+        <p className="helper"> <FontAwesomeIcon className="icon" icon={faInfoCircle}/> Cliquer sur la pastille pour acceder au diplôme</p>
         <div className="content--part certifs-part left">
             <BubbleLink link="https://www.coursera.org/account/accomplishments/specialization/XWHYQL8H6H2F" bubbleTitle="iOS" bubbleIcon={faApple}/>
             <h4>Swift 5 iOS Application Developer</h4>
